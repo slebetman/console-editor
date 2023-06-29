@@ -1,0 +1,15 @@
+{
+  "name": "console-editor",
+  "version": "1.0.0",
+  "description": "Edit object properties or functions in an external editor",
+  "main": "console-editor.js",
+  "repository": "git@github.com:slebetman/console-editor.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "tmp-promise": "^3.0.3"
+  }
+}
