@@ -1,6 +1,6 @@
 {
   "name": "console-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Edit object properties or functions in an external editor",
   "main": "console-editor.js",
   "repository": "git@github.com:slebetman/console-editor.git",

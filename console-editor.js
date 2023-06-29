@@ -61,11 +61,10 @@ function editObject(obj, prop) {
 		obj[prop] = raw;
 	} else {
 		try {
-			raw = JSON.stringify(raw);
+			raw = JSON.stringify(raw, null, 2);
 
 			raw = execEditor(raw);
 
-			console.log(`Updating ${prop} = ${raw}`);
 			obj[prop] = JSON.parse(raw);
 		} catch (err) {
 			// do nothing
