@@ -8,7 +8,7 @@ function execEditor(txt) {
 	const tmpFile = tmp.fileSync();
 	fs.writeSync(tmpFile.fd, txt);
 	fs.close(tmpFile.fd);
-	child_process.execFileSync(process.env.EDITOR, [tmpFile.name], {
+	child_process.execFileSync(process.env.VISUAL || process.env.EDITOR, [tmpFile.name], {
 		stdio: "inherit",
 	});
 	return fs.readFileSync(tmpFile.name).toString("utf8");

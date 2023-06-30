@@ -1,6 +1,6 @@
 # console-editor
 
-Edit functions in a real editor
+Edit object properties or functions in a real editor
 
 ![edit function](./demo.gif)
 
@@ -12,7 +12,7 @@ in servers or long-running services.
 
 The module exposes one function which can be used to edit functions and objects in
 a terminal editor such as `vim` or `slap`. It will launch the editor you configured
-in the `$EDITOR` environment variable.
+in the `$VISUAL` or `$EDITOR` environment variable.
 
     > edit = require('console-editor')
 	> edit(some_function)
