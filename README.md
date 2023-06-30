@@ -6,7 +6,7 @@ Edit object properties or functions in a real editor
 
 ### Usage:
 
-This is meant to be used from withing the node repl or from an interactive program.
+This is meant to be used from within the node repl or from an interactive program.
 Currently all functions are synchronous so this is not really suitable to be used
 in servers or long-running services.
 
